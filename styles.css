@@ -6840,7 +6840,7 @@ input, select, textarea {
 		}
 
 			.gallery.style2 > .forward:before {
-				content: '\f105';
+				content: '\003E';
 				right: 0;
 			}
 
@@ -6850,7 +6850,7 @@ input, select, textarea {
 		}
 
 			.gallery.style2 > .backward:before {
-				content: '\f104';
+				content: '\003C';
 				left: 0;
 			}
 
