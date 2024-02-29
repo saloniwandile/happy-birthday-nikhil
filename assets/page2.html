@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <nav>
+        <ul>
+            <a href="../index.html" id="backButton">&larr; Back</a>
+                <h2 id="he_is"><b>He is a...</b></h2>
+        </ul>
+    </nav>
+
+    <section class="slider-container">
+      <div class="slider-images">
+        
+          <div class="slider-img" id="artist">
+            <img src="../images/nik/artist.jpg" alt="1" />
+            <h1>Artist</h1>
+            <div class="details">
+              <h2>Artist</h2>
+              <p>Creativity Imagination</p>
+            </div>
+          </div>
+          <div class="slider-img">
+            <img src="../images/nik/dance1.png" alt="2" />
+            <h1>Dancer</h1>
+            <div class="details">
+              <h2>Dancer</h2>
+              <p>In-house Prabhudeva</p>
+            </div>
+          </div>
+          <div class="slider-img">
+            <img src="../images/nik/travel.jpg" alt="3" />
+            <h1>Travel</h1>
+            <div class="details">
+              <h2>Travel</h2>
+              <p>He has to drive everywhere🙃</p>
+            </div>
+          </div>
+          <div class="slider-img">
+            <img src="../images/nik/cook.jpg" alt="4" />
+            <h1>Cook</h1>
+            <div class="details">
+              <h2>Cook</h2>
+              <p>Master Chef</p>
+            </div>
+          </div>
+          <div class="slider-img">
+            <img src="../images/nik/guit.png" alt="5" />
+            <h1>Musician</h1>
+            <div class="details">
+              <h2>Musician</h2>
+              <p>*DDLJ tune playing in background*</p>
+            </div>
+          </div>
+          <div class="slider-img">
+            <img src="../images/nik/singer.png" alt="6" />
+            <h1>Singer</h1>
+            <div class="details">
+              <h2>Singer</h2>
+              <p>Arijit❌Nikhil✅</p>
+            </div>
+          </div>
+          <div class="slider-img">
+            <img src="../images/nik/baker.jpg" alt="7" />
+            <h1>Baker</h1>
+            <div class="details">
+              <h2>Baker</h2>
+              <p>Baking is a piece of 🎂 for him</p>
+            </div>
+          </div>
+          <div class="slider-img">
+            <img src="../images/nik/carrom.jpg" alt="8" />
+            <h1 style="font-size: 30px">Carrom Player</h1>
+            <div class="details">
+              <h2 style="font-size: 20px">Semi-professional Carrom Player</h2>
+              <p>I still beat him🤣</p>
+            </div>
+          </div>
+          <div class="slider-img">
+            <img src="../images/nik/nik1.jpg" alt="9" />
+            <h1>Youtuber</h1>
+            <div class="details">
+              <h2>Youtuber</h2>
+              <p>CSubscribe to his channel <a href="https://www.youtube.com/@nikhilwandile9663" target= "_blank">Click here</a></p>
+            </div>
+          </div>
+    </section>
+    
+
+    <script src="js/jQuery.js"></script>
+
+    <script>
+        jQuery(document).ready(function ($) {
+          $(".slider-img").on("click", function () {
+            $(this).toggleClass("active");
+            $(".slider-img").not(this).removeClass("active");
+          });
+        });
+      </script>
+  </body>
+</html>
