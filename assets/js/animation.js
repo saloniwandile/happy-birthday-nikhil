@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
             image.style.opacity = '0';
         });
         // Call startAnimation again after a delay
-        setTimeout(startAnimation, delay*0.4); // Adjusted to match the total duration of all animations
+        setTimeout(startAnimation, delay*0.25); // Adjusted to match the total duration of all animations
     }
 
     // Call the restartAnimation function after each round completes
