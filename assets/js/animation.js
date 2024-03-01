@@ -1,22 +1,3 @@
-// document.addEventListener("DOMContentLoaded", function() {
-//     var animatedImages = document.querySelectorAll('.animated-image');
-//     var delay = 500; // Delay between each image animation in milliseconds
-
-//     // Function to animate each image with a delay
-//     function animateImages(images, delay) {
-//         images.forEach(function(image, index) {
-//             setTimeout(function() {
-//                 image.style.opacity = '1';
-//             }, index * delay);
-//         });
-//     }
-
-//     // Call the animateImages function after a delay
-//     setTimeout(function() {
-//         animateImages(animatedImages, delay);
-//     }, 500); // Delay before starting animations in milliseconds
-// });
-
 document.addEventListener("DOMContentLoaded", function() {
     var animatedImages1 = document.querySelectorAll('#animation-grid1 .animated-image');
     var animatedImages2 = document.querySelectorAll('#animation-grid2 .animated-image');
@@ -36,21 +17,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Call the animateImages function for each section
     function startAnimation() {
-        setTimeout(function() {
-            animateImages(animatedImages1, delay);
-        }, delay);
-        setTimeout(function() {
-            animateImages(animatedImages2, delay);
-        }, delay);
-        setTimeout(function() {
-            animateImages(animatedImages3, delay);
-        }, delay);
-        setTimeout(function() {
-            animateImages(animatedImages4, delay);
-        }, delay);
-        setTimeout(function() {
-            animateImages(animatedImages5, delay);
-        }, delay);
+        animateImages(animatedImages1, delay);
+        animateImages(animatedImages2, delay);
+        animateImages(animatedImages3, delay);
+        animateImages(animatedImages4, delay);
+        animateImages(animatedImages5, delay);
     }
 
     // Call the startAnimation function to begin the animation
@@ -63,9 +34,9 @@ document.addEventListener("DOMContentLoaded", function() {
             image.style.opacity = '0';
         });
         // Call startAnimation again after a delay
-        setTimeout(startAnimation, delay);
+        setTimeout(startAnimation, delay*0.3); // Adjusted to match the total duration of all animations
     }
 
     // Call the restartAnimation function after each round completes
-    setInterval(restartAnimation, delay * 2);
-});
+    setInterval(restartAnimation, delay * 5); 
+})
